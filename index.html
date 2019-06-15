@@ -23,7 +23,7 @@
 
     <!-- These are the instructions -->
     <div class="row">
-        <div id="instructions-box" class="col-5 bg-warning">
+        <div id="instructions-box" class="col-8 bg-warning">
             <p id="instructions-text">You will be given a random number at the start of the game.</p>
             <p id="instructions-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <p id="instructions-text">You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
@@ -32,11 +32,11 @@
         </div>
     </div>
 
-
+    <!-- This row holds the goal number and wins/losses -->
     <div class="row">
 
         <!-- This is the box for the number that you want to reach. -->
-        <div id="goal-box" class="col-3 bg-success">
+        <div id="goal-box" class="col-4 bg-success">
             <!-- This is where the computer's random goal var will be pushed -->
             <h2 id="comp-goal">XXX</h2>
         </div>
@@ -48,9 +48,41 @@
             <!-- This is where the losses var will be pushed -->
             <h4>Losses <span id="losses">X</span></h4>
         </div>
+    </div>
 
+    <!-- This row will contain the gems -->
+    <div class="row">
+
+        <!-- This card will contain the red gem -->
+        <div class="col-2">
+            <div id="red-gem" class="card bg-light">
+                <img src="assets/images/red-gem.png" class="card-img" alt="red gem" height="100px" width="100px">
+            </div>
+        </div>
+
+        <!-- This card will contain the blue gem -->
+        <div class="col-2">
+            <div id="blue-gem" class="card bg-light">
+                <img src="assets/images/blue-gem.png" class="card-img" alt="blue gem" height="100px" width="100px">
+            </div>
+        </div>
+
+        <!-- This card will contain the yellow gem -->
+        <div class="col-2">
+            <div id="yellow-gem" class="card bg-light">
+                <img src="assets/images/yellow-gem.png" class="card-img" alt="yellow gem" height="100px" width="100px">
+            </div>
+        </div>
+
+        <!-- This card will contain the green gem -->
+        <div class="col-2">
+            <div id="green-gem" class="card bg-light">
+                <img src="assets/images/green-gem.png" class="card-img" alt="green gem" height="100px" width="100px">
+            </div>
+        </div>
 
     </div>
+
 </div>
 </body>
 </html>
