@@ -55,6 +55,19 @@ $(document).ready(function () {
             // fetch #wins and insert updated wins value
             $("#wins").html(wins);
             console.log("wins: " + wins);
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
         else if (userScore > compGuess) {
@@ -65,6 +78,19 @@ $(document).ready(function () {
             // fetch #losse and insert updated losses value
             $("#losses").html(losses);
             console.log("losses: " + losses)
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
 
         }
 
@@ -88,6 +114,19 @@ $(document).ready(function () {
             // fetch #wins and insert updated wins value
             $("#wins").html(wins);
             console.log("wins: " + wins);
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
         else if (userScore > compGuess) {
@@ -97,7 +136,20 @@ $(document).ready(function () {
 
             // fetch #losse and insert updated losses value
             $("#losses").html(losses);
-            console.log("losses: " + losses)
+            console.log("losses: " + losses);
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
 
         }
 
@@ -122,6 +174,19 @@ $(document).ready(function () {
             // fetch #wins and insert updated wins value
             $("#wins").html(wins);
             console.log("wins: " + wins);
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
         else if (userScore > compGuess) {
@@ -131,8 +196,20 @@ $(document).ready(function () {
 
             // fetch #losse and insert updated losses value
             $("#losses").html(losses);
-            console.log("losses: " + losses)
+            console.log("losses: " + losses);
 
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
 
@@ -156,6 +233,19 @@ $(document).ready(function () {
             // fetch #wins and insert updated wins value
             $("#wins").html(wins);
             console.log("wins: " + wins);
+
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
         else if (userScore > compGuess) {
@@ -165,8 +255,20 @@ $(document).ready(function () {
 
             // fetch #losse and insert updated losses value
             $("#losses").html(losses);
-            console.log("losses: " + losses)
+            console.log("losses: " + losses);
 
+            // new random compGuess
+            compGuess = Math.floor(Math.random() * 120) + 19;
+
+            // fetch #comp-goal and insert updated compGuess
+            $("#comp-goal").html(compGuess);
+            console.log("goal: " + compGuess)
+
+            // userScore resets to 0
+            userScore = 0;
+
+            // fetch #user-score and insert updated value
+            $("#user-score").html(userScore);
         }
 
 
