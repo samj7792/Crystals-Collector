@@ -38,6 +38,64 @@ function randomGems () {
     yellowGemVal = Math.floor(Math.random() * 12) +1;
     // gem gets new random value
     greenGemVal = Math.floor(Math.random() * 12) +1;
+};
+
+function win() {
+    // wins increment by 1
+    wins++;
+
+    // fetch #wins and insert updated wins value
+    $("#wins").html(wins);
+    console.log("wins: " + wins);
+
+    // new random compGuess
+    compGuess = Math.floor(Math.random() * 120) + 19;
+
+    // fetch #comp-goal and insert updated compGuess
+    $("#comp-goal").html(compGuess);
+    console.log("goal: " + compGuess)
+
+    // userScore resets to 0
+    userScore = 0;
+
+    // fetch #user-score and insert updated value
+    $("#user-score").html(userScore);
+
+    // gems gets new random value
+    randomGems();
+    console.log("red: " + redGemVal);
+    console.log("blue: " +blueGemVal);
+    console.log("yellow: " + yellowGemVal);
+    console.log("green: " + greenGemVal);
+};
+
+function loss() {
+    // losses increment by 1
+    losses++;
+
+    // fetch #losse and insert updated losses value
+    $("#losses").html(losses);
+    console.log("losses: " + losses)
+
+    // new random compGuess
+    compGuess = Math.floor(Math.random() * 120) + 19;
+
+    // fetch #comp-goal and insert updated compGuess
+    $("#comp-goal").html(compGuess);
+    console.log("goal: " + compGuess)
+
+    // userScore resets to 0
+    userScore = 0;
+
+    // fetch #user-score and insert updated value
+    $("#user-score").html(userScore);
+
+    // gems gets new random value
+    randomGems();
+    console.log("red: " + redGemVal);
+    console.log("blue: " +blueGemVal);
+    console.log("yellow: " + yellowGemVal);
+    console.log("green: " + greenGemVal);
 }
 
 
@@ -59,62 +117,14 @@ $(document).ready(function () {
 
         if (userScore === compGuess) {
 
-            // wins increment by 1
-            wins++;
-
-            // fetch #wins and insert updated wins value
-            $("#wins").html(wins);
-            console.log("wins: " + wins);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run win function
+            win();
         }
 
         else if (userScore > compGuess) {
 
-            // losses increment by 1
-            losses++;
-
-            // fetch #losse and insert updated losses value
-            $("#losses").html(losses);
-            console.log("losses: " + losses)
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run loss function
+            loss();
         }
 
     });
@@ -131,62 +141,14 @@ $(document).ready(function () {
 
         if (userScore === compGuess) {
 
-            // wins increment by 1
-            wins++;
-
-            // fetch #wins and insert updated wins value
-            $("#wins").html(wins);
-            console.log("wins: " + wins);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run win function
+            win();
         }
 
         else if (userScore > compGuess) {
 
-            // losses increment by 1
-            losses++;
-
-            // fetch #losse and insert updated losses value
-            $("#losses").html(losses);
-            console.log("losses: " + losses);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run loss function
+            loss();
         }
 
 
@@ -204,62 +166,14 @@ $(document).ready(function () {
 
         if (userScore === compGuess) {
 
-            // wins increment by 1
-            wins++;
-
-            // fetch #wins and insert updated wins value
-            $("#wins").html(wins);
-            console.log("wins: " + wins);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-           // gems gets new random value
-           randomGems();
-           console.log("red: " + redGemVal);
-           console.log("blue: " +blueGemVal);
-           console.log("yellow: " + yellowGemVal);
-           console.log("green: " + greenGemVal);
+            // run win function
+            win();
         }
 
         else if (userScore > compGuess) {
 
-            // losses increment by 1
-            losses++;
-
-            // fetch #losse and insert updated losses value
-            $("#losses").html(losses);
-            console.log("losses: " + losses);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run loss function
+            loss();
         }
 
 
@@ -277,62 +191,14 @@ $(document).ready(function () {
 
         if (userScore === compGuess) {
 
-            // wins increment by 1
-            wins++;
-
-            // fetch #wins and insert updated wins value
-            $("#wins").html(wins);
-            console.log("wins: " + wins);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run win function
+            win();
         }
 
         else if (userScore > compGuess) {
 
-            // losses increment by 1
-            losses++;
-
-            // fetch #losse and insert updated losses value
-            $("#losses").html(losses);
-            console.log("losses: " + losses);
-
-            // new random compGuess
-            compGuess = Math.floor(Math.random() * 120) + 19;
-
-            // fetch #comp-goal and insert updated compGuess
-            $("#comp-goal").html(compGuess);
-            console.log("goal: " + compGuess)
-
-            // userScore resets to 0
-            userScore = 0;
-
-            // fetch #user-score and insert updated value
-            $("#user-score").html(userScore);
-
-            // gems gets new random value
-            randomGems();
-            console.log("red: " + redGemVal);
-            console.log("blue: " +blueGemVal);
-            console.log("yellow: " + yellowGemVal);
-            console.log("green: " + greenGemVal);
+            // run loss function
+            loss();
         }
 
 
