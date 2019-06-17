@@ -40,6 +40,7 @@ function randomGems () {
     greenGemVal = Math.floor(Math.random() * 12) +1;
 };
 
+// function to run when user wins
 function win() {
     // wins increment by 1
     wins++;
@@ -69,6 +70,7 @@ function win() {
     console.log("green: " + greenGemVal);
 };
 
+// function to run when user loses
 function loss() {
     // losses increment by 1
     losses++;
@@ -96,7 +98,33 @@ function loss() {
     console.log("blue: " +blueGemVal);
     console.log("yellow: " + yellowGemVal);
     console.log("green: " + greenGemVal);
-}
+};
+
+// function to give gems unique values
+function gemCheck() {
+
+    while (redGemVal === blueGemVal || redGemVal === yellowGemVal || redGemVal === greenGemVal) {
+        redGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("red: " + redGemVal);
+    }
+    while (blueGemVal === yellowGemVal || blueGemVal === greenGemVal || blueGemVal === redGemVal) {
+        blueGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("blue: " + blueGemVal);
+    }
+    while (yellowGemVal === greenGemVal || yellowGemVal === redGemVal || yellowGemVal === blueGemVal) {
+        yellowGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("yellow: " + yellowGemVal);
+    }
+    while (greenGemVal === redGemVal || greenGemVal === blueGemVal || greenGemVal === yellowGemVal) {
+        yellowGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("yellow: " + yellowGemVal);
+    }
+
+
+};
+
+
+
 
 
 
@@ -104,6 +132,9 @@ $(document).ready(function () {
 
     // fetch #comp-goal, insert compGuess in its html
     $("#comp-goal").html(compGuess);
+
+    // run gemCheck function
+    gemCheck();
 
     // when red-gem card is clicked
     $("#red-gem").on("click", function() {
