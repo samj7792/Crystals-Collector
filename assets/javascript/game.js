@@ -1,5 +1,5 @@
 // random number goal
-var compGuess = Math.floor(Math.random() * 120) + 19;
+var compGuess = Math.floor(Math.random() * 102) + 19;
 console.log("goal: " + compGuess)
 
 // user's current score, starts at 0
@@ -40,6 +40,27 @@ function randomGems () {
     greenGemVal = Math.floor(Math.random() * 12) +1;
 };
 
+// function to give gems unique values
+function gemCheck() {
+
+    while (redGemVal === blueGemVal || redGemVal === yellowGemVal || redGemVal === greenGemVal) {
+        redGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("red: " + redGemVal);
+    }
+    while (blueGemVal === yellowGemVal || blueGemVal === greenGemVal || blueGemVal === redGemVal) {
+        blueGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("blue: " + blueGemVal);
+    }
+    while (yellowGemVal === greenGemVal || yellowGemVal === redGemVal || yellowGemVal === blueGemVal) {
+        yellowGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("yellow: " + yellowGemVal);
+    }
+    while (greenGemVal === redGemVal || greenGemVal === blueGemVal || greenGemVal === yellowGemVal) {
+        yellowGemVal = Math.floor(Math.random() * 12) +1;
+        console.log("yellow: " + yellowGemVal);
+    }
+};
+
 // function to run when user wins
 function win() {
     // wins increment by 1
@@ -64,6 +85,10 @@ function win() {
 
     // gems gets new random value
     randomGems();
+
+    // gives gems unique values
+    gemCheck();
+    
     console.log("red: " + redGemVal);
     console.log("blue: " +blueGemVal);
     console.log("yellow: " + yellowGemVal);
@@ -94,34 +119,17 @@ function loss() {
 
     // gems gets new random value
     randomGems();
+
+    // gives gems unique values
+    gemCheck();
+
     console.log("red: " + redGemVal);
     console.log("blue: " +blueGemVal);
     console.log("yellow: " + yellowGemVal);
     console.log("green: " + greenGemVal);
 };
 
-// function to give gems unique values
-function gemCheck() {
 
-    while (redGemVal === blueGemVal || redGemVal === yellowGemVal || redGemVal === greenGemVal) {
-        redGemVal = Math.floor(Math.random() * 12) +1;
-        console.log("red: " + redGemVal);
-    }
-    while (blueGemVal === yellowGemVal || blueGemVal === greenGemVal || blueGemVal === redGemVal) {
-        blueGemVal = Math.floor(Math.random() * 12) +1;
-        console.log("blue: " + blueGemVal);
-    }
-    while (yellowGemVal === greenGemVal || yellowGemVal === redGemVal || yellowGemVal === blueGemVal) {
-        yellowGemVal = Math.floor(Math.random() * 12) +1;
-        console.log("yellow: " + yellowGemVal);
-    }
-    while (greenGemVal === redGemVal || greenGemVal === blueGemVal || greenGemVal === yellowGemVal) {
-        yellowGemVal = Math.floor(Math.random() * 12) +1;
-        console.log("yellow: " + yellowGemVal);
-    }
-
-
-};
 
 
 
