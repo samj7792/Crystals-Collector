@@ -1,3 +1,40 @@
+h1 {
+    margin: 0;
+}
+
 body {
     background-image: url("../images/beige-tiles.png");
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 350%;
+}
+
+#instructions-box {
+    padding: 15px;
+}
+
+p {
+    font-family: 'Questrial', sans-serif;
+    font-weight: bolder;
+    font-size: 110%;
+    margin: 10px;
+}
+
+#comp-goal,
+#user-score {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Audiowide', cursive;
+    font-size: 300%;
+}
+
+h4 {
+    margin: 10px;
+}
+
+#wins,
+#losses {
+    font-family: 'Audiowide', cursive;
 }
