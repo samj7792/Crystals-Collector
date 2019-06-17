@@ -28,7 +28,17 @@ console.log("yellow: " + yellowGemVal);
 var greenGemVal = Math.floor(Math.random() * 12) +1;
 console.log("green: " + greenGemVal);
 
-
+// function to give all gems random values
+function randomGems () {
+    // gem gets new random value
+    redGemVal = Math.floor(Math.random() * 12) +1;
+    // gem gets new random value
+    blueGemVal = Math.floor(Math.random() * 12) +1;
+    // gem gets new random value
+    yellowGemVal = Math.floor(Math.random() * 12) +1;
+    // gem gets new random value
+    greenGemVal = Math.floor(Math.random() * 12) +1;
+}
 
 
 
@@ -68,6 +78,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
         else if (userScore > compGuess) {
@@ -92,6 +109,12 @@ $(document).ready(function () {
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
 
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
     });
@@ -127,6 +150,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
         else if (userScore > compGuess) {
@@ -151,6 +181,12 @@ $(document).ready(function () {
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
 
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
 
@@ -187,6 +223,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+           // gems gets new random value
+           randomGems();
+           console.log("red: " + redGemVal);
+           console.log("blue: " +blueGemVal);
+           console.log("yellow: " + yellowGemVal);
+           console.log("green: " + greenGemVal);
         }
 
         else if (userScore > compGuess) {
@@ -210,6 +253,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
 
@@ -246,6 +296,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
         else if (userScore > compGuess) {
@@ -269,6 +326,13 @@ $(document).ready(function () {
 
             // fetch #user-score and insert updated value
             $("#user-score").html(userScore);
+
+            // gems gets new random value
+            randomGems();
+            console.log("red: " + redGemVal);
+            console.log("blue: " +blueGemVal);
+            console.log("yellow: " + yellowGemVal);
+            console.log("green: " + greenGemVal);
         }
 
 
