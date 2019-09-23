@@ -1,5 +1,3 @@
-# unit-4-game
-
 ***Crystals Collector***
 
 In this game the computer chooses a random value between 19 and 120.
